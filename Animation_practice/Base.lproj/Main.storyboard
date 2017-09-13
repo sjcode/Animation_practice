@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="97n-IJ-C6z"/>
+                        <viewControllerLayoutGuide type="bottom" id="M55-ow-vt3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGw-ep-DcK">
+                                <rect key="frame" x="277" y="446" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="motion:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1fb-Fk-WZi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pu-Ro-QK0">
+                                <rect key="frame" x="271" y="51" width="58" height="30"/>
+                                <state key="normal" title="Rotation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sharek:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Fuv-2s-pRl"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-oj-rHi">
+                                <rect key="frame" x="211" y="96" width="178" height="166"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.009270870451" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="d9f-Nw-3hj"/>
+                                    <constraint firstAttribute="width" constant="178" id="ouP-bW-gYI"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2pz-zw-rd9">
+                                <rect key="frame" x="174" y="354" width="252" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snowman" translatesAutoresizingMaskIntoConstraints="NO" id="ISk-z0-PRh">
+                                        <rect key="frame" x="10" y="11" width="19" height="22"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwO-5q-eJh">
+                                        <rect key="frame" x="35" y="7" width="209" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" red="0.51784205436706543" green="0.58159953355789185" blue="0.58617168664932251" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="gVw-0S-YEZ"/>
+                                    <constraint firstAttribute="height" constant="44" id="t8H-3X-nRQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u8c-fO-iFf">
+                                <rect key="frame" x="16" y="454" width="230" height="126"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6b-zT-WgI">
+                                <rect key="frame" x="271" y="550" width="85" height="30"/>
+                                <state key="normal" title="changecolor">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changecolor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5NH-O9-FOK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dgc-oj-rHi" firstAttribute="top" secondItem="0Pu-Ro-QK0" secondAttribute="bottom" constant="16" id="1bR-26-cTU"/>
+                            <constraint firstItem="2pz-zw-rd9" firstAttribute="top" secondItem="Dgc-oj-rHi" secondAttribute="bottom" constant="92" id="2lv-V4-yVd"/>
+                            <constraint firstAttribute="centerX" secondItem="cGw-ep-DcK" secondAttribute="centerX" id="9vn-cv-okR"/>
+                            <constraint firstAttribute="centerX" secondItem="2pz-zw-rd9" secondAttribute="centerX" id="AUb-Wu-2Nt"/>
+                            <constraint firstAttribute="centerX" secondItem="Dgc-oj-rHi" secondAttribute="centerX" id="C7M-OC-dC0"/>
+                            <constraint firstItem="M55-ow-vt3" firstAttribute="top" secondItem="cGw-ep-DcK" secondAttribute="bottom" constant="124" id="GMR-GJ-MKj"/>
+                            <constraint firstAttribute="centerX" secondItem="0Pu-Ro-QK0" secondAttribute="centerX" id="R7p-bI-rIl"/>
+                            <constraint firstItem="0Pu-Ro-QK0" firstAttribute="top" secondItem="97n-IJ-C6z" secondAttribute="bottom" constant="30" id="Snd-py-TOh"/>
+                            <constraint firstItem="0Pu-Ro-QK0" firstAttribute="top" secondItem="97n-IJ-C6z" secondAttribute="bottom" constant="31" id="ZyD-p1-HOa"/>
+                            <constraint firstItem="0Pu-Ro-QK0" firstAttribute="top" secondItem="97n-IJ-C6z" secondAttribute="bottom" constant="31" id="ecL-Oh-ymi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Snd-py-TOh"/>
+                                <exclude reference="ZyD-p1-HOa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="0Pu-Ro-QK0" id="hPl-2G-f05"/>
+                        <outlet property="colorView" destination="u8c-fO-iFf" id="MHd-Gp-Qxw"/>
+                        <outlet property="layerView" destination="kh9-bI-dsS" id="hFe-J3-bFs"/>
+                        <outlet property="passTextField" destination="dwO-5q-eJh" id="QtY-T1-cY0"/>
+                        <outlet property="passView" destination="2pz-zw-rd9" id="zqk-Ko-NNQ"/>
+                        <outlet property="redView" destination="Dgc-oj-rHi" id="fHD-4N-yPV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="448"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="snowman" width="48" height="48"/>
+    </resources>
+</document>
